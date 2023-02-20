@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Task-9-5</title>
+	</head>
+	<body>
+	<h1>FILTER METHOD</h1>
+	<Script>
+	 //Task-5
+			const employees1 = [
+						  { name: 'David Carlson', age: 30 },
+						  { name: 'John Cena', age: 34 },
+						  { name: 'Mike Sheridan', age: 25 },
+						  { name: 'John Carte', age: 50 }
+						];
+
+						const employ = employees1.findIndex(function (employee) {
+						  return employee.name.indexOf('John') > -1;
+						});
+
+						console.log(employ);
+						document.write("<br>",	JSON.stringify(employ));
+						const employees2 = [
+							  { name: 'David Carlson', age: 30 },
+							  { name: 'John Cena', age: 34 },
+							  { name: 'Mike Sheridan', age: 25 },
+							  { name: 'John Carte', age: 50 }
+							];
+
+						const employe = employees2.filter(function (employee) {
+						  return employee.name.indexOf('John') > -1;
+						});
+						console.log(employe);
+						document.write("<br>",	JSON.stringify(employe));
+	</script>
+
+	</body>
+	</html>
